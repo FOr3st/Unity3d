@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour {
 		movement.Set(h, 0f, v);
 		movement = movement.normalized * speed * Time.deltaTime;
 		playerRigidBody.MovePosition(transform.position + movement);
+		//playerRigidBody.transform.position += movement;
 	}
 
 	void rotate ()
